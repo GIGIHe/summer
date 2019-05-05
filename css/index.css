@@ -1,0 +1,375 @@
+*{margin: 0;padding: 0;}
+html{ font-family: "Microsoft YaHei"; color:#333; font-size:100px;}
+html,body{width:100%;min-width:7.5rem;height:100%;background: #f4f4f4;}
+li{ list-style:none; }
+a{ text-decoration:none; color:#333; }
+a img{ border:0; }
+img{ vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+.clearfix{ *zoom:1; }
+.clearfix:after{ content:""; display:block; clear:both; }
+.fl{float: left}
+.fr{float: right}
+input {/*-webkit-appearance:none;*/outline: none}
+.main{width: 7.5rem;margin: 0 auto}
+.zg-wrap{margin: 0 auto;width: 7.5rem;}
+header {
+    width: 7.5rem;
+    height: .8rem;
+    background: #f2f2f2;
+}
+header a {
+    font:700 .2rem/.4rem "microsoft yahei";
+    color:#fff;
+}
+header a img {
+    float: left;
+}
+header .logo {
+    display: block;
+    float: left;
+    width: 2rem;
+    height: .36rem;
+    margin-top: .2rem;
+    margin-left: .3rem;
+}
+header .zgfb {
+    display: block;
+    float: right;
+    width: 1.15rem;
+    height: .36rem;
+    margin-right: .3rem;
+    margin-top: .2rem;
+}
+header .logo img {
+    width: .75rem;
+    height: .34rem;
+    margin-right: .1rem;
+}
+header .zgfb img {
+    width: .27rem;
+    height: .24rem;
+    margin-top: .12rem;
+}
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -3.6rem;
+    z-index: 899;
+}
+.navbar {
+    box-shadow: none;
+    background: rgba(70,70,70,0);
+}
+.navbar.active {
+    background: rgb(255,255,255);
+    transition: background 3s;
+}
+.navbar.active a {
+    color:#000;
+}
+/*footer*/
+.foot{
+    position: fixed;
+    bottom:0;
+    width:7.5rem;
+    height:.9rem;
+    overflow: hidden;
+    z-index:999;
+}
+.foot a{
+    float: left;
+    width:3.75rem;
+    font:.26rem/0.9rem 'Microsoft YaHei';
+    text-align: center;
+}
+.foot a:first-child{
+    background: #f2f2f2;
+    color: #000;
+}
+.foot a:first-child img {
+    width: .47rem;
+    height: .4rem;
+    margin-right: .1rem;
+}
+.foot a:last-child{
+    background: #dc2f3c;
+    color: #fff;
+}
+.foot a:last-child img {
+    width: .3rem;
+    height: .38rem;
+    margin-right: .1rem;
+}
+
+
+/*m_banner*/
+.mban {
+    width: 7.5rem;
+    height: 4.58rem;
+    background: url(../images/ban_01.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    position: relative;
+}
+.mban h1 {
+    float: left;
+    text-indent: -9999px;
+}
+/*zgm1*/
+.zgm1 {
+    width:7.5rem;
+    height: 5.81rem;
+    background: url(../images/m1_bg_02.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+}
+.zgm1 h2{
+    width: 6.9rem;
+    height: 1rem;
+    margin: auto;
+    margin-bottom: .55rem;
+    background: url(../images/m1_h.png) no-repeat center top;
+    -webkit-background-size: 6.9rem;
+    background-size: 6.9rem;
+}
+/*zgm2*/
+.zgm2 {
+    width:7.5rem;
+    height: 5.02rem;
+    margin-top: -1px;
+    background: url(../images/m2_bg_02.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+}
+.zgm2 h2{
+    width: 6rem;
+    height: .83rem;
+    margin: auto;
+    margin-bottom: .2em;
+    background: url(../images/m2_h.png) no-repeat center top;
+    -webkit-background-size: 6rem;
+    background-size: 6rem;
+}
+.zgm2 .lc{
+    width: 6.9rem;
+    height: 3.33rem;
+    margin: auto;
+    background: url(../images/m2_cl.png) no-repeat center top;
+    -webkit-background-size: 6.9rem;
+    background-size: 6.9rem;
+}
+/*zgm3*/
+.zgm3 {
+    width:7.5rem;
+    height: 7.24rem;
+    margin-top: -1px;
+    background: url(../images/m3_bg_02.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+}
+.zgm3 h2{
+    width: 6.87rem;
+    height: .84rem;
+    margin: auto;
+    margin-bottom: .2em;
+    background: url(../images/m3_h.png) no-repeat center top;
+    -webkit-background-size: 6.87rem;
+    background-size: 6.87rem;
+}
+/*table start*/
+.zgm3 .tab_w{
+  width: 6.9rem;
+   margin: 0 auto;
+}
+/*table 表格样式start*/
+.table {
+  width: 6.9rem;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+}
+.table tr{
+  border-bottom: 1px solid #ff3626;
+}
+.table tr td{  font:400 .24rem/.6rem "microsoft yahei";
+  color:#ff3626;
+  /*padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;*/
+}
+.table tr:nth-child(odd) {
+  background: #fff8c4;
+}
+.table tr:nth-child(even)  {
+  background: #fff;
+}
+.table tr td:first-child{
+  border-right:1px solid #ff3626;
+  width: 30%;
+}
+/*table end*/
+/*zgm4*/
+.zgm4 {
+  width: 7.5rem;
+  height: 6.64rem;
+  margin-top: -1px;
+  background: url(../images/m4_bg_02.jpg) no-repeat center top;
+  -webkit-background-size: 7.5rem;
+  background-size: 7.5rem;
+}
+.zgm4 h2 {
+  width: 2.54rem;
+  height: .44rem;
+  margin: auto;
+  background: url(../images/m4_h.png) no-repeat center top;
+  -webkit-background-size: 2.54rem;
+  background-size: 2.54rem;
+  margin-bottom:.1rem;
+}
+.zgm4 .form_w{
+  width: 6.9rem;
+  height: 5.3rem;
+  padding-top: .4rem;
+  margin: auto;
+  background: url(../images/form_bg.png) no-repeat center top;
+  -webkit-background-size: 6.9rem;
+  background-size: 6.9rem;
+  box-sizing:border-box;
+}
+.zgm4 .form{
+  width: 6.9rem;
+}
+.zgm4 .form_w li{
+  width:5.12rem;
+  height: .68rem;
+  padding: .2rem;
+  padding-top: .1rem;
+  margin: auto;
+  font:600 .2rem/.4rem "microsoft yahei";
+  color:#a9a9a9;
+  border-radius: .34rem;
+  background-color: #fff;
+  margin-bottom: .1rem;
+  position: relative;
+  box-sizing:border-box;
+}
+.zgm4 .form_w li.sel::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: .22rem;
+  height: .12rem;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../images/drap.png) no-repeat center;
+  -webkit-background-size: .22rem;
+  background-size: .22rem;
+  z-index: 9;
+}
+.form li span{
+  float: left;
+  width: .22rem;
+  height: .29rem;
+  margin-top: .05rem;
+  background: url(../images/user.png) no-repeat center;
+  -webkit-background-size: .22rem;
+  background-size: .22rem;
+}
+.zgm4 .form li:nth-child(2) span{
+  float: left;
+  width: .22rem
+  height: .28rem;
+  background: url(../images/tel.png)  no-repeat center top;
+   -webkit-background-size: .22rem;
+  background-size: .22rem;
+}
+.zgm4 .form li:nth-child(3) span{
+  float: left;
+  width: .3rem;
+  height: .24rem;
+  background: url(../images/xx.png)  no-repeat center top;
+   -webkit-background-size: .3rem;
+  background-size: .3rem;
+}
+.zgm4 .form li:nth-child(4) span{
+  float: left;
+  width: .28rem;
+  height: .24rem;
+  background: url(../images/subj.png)  no-repeat center top;
+   -webkit-background-size: .28rem;
+  background-size: .28rem;
+}
+.zgm4 .form li:nth-child(5) span{
+  float: left;
+  width: .24rem;
+  height: .28rem;
+  background: url(../images/welfare.png)  no-repeat center top;
+   -webkit-background-size: .24rem;
+  background-size: .24rem;
+}
+/*清除默认样式*/
+input{
+  float: left;
+  width: 3rem;
+  height: .4rem;
+  outline: none;
+  border:none;
+  background: none;
+  text-indent: 1em;
+  color:#333333;
+  /*border: 1px solid black;*/
+}
+.submit {
+  outline: none;
+  background: none;
+  border:none;
+  border-radius: 22px;
+  width: 5.12rem;
+  height: .8rem;
+  margin: auto;
+  display: block;
+  font-size: .3rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: .8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+  background: url(../images/bt.png) no-repeat center;
+  -webkit-background-size: 5.12rem;
+  background-size: 5.12rem;
+  margin-left: .84rem;
+}
+/*下拉列表样式*/
+select{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  background: #fff;
+  width: 4.4rem;
+  height: .4rem;
+  font-size: .2rem;
+  text-indent: 1em;
+  color: #333;
+}
+/*placeholder样式*/
+.form input::-webkit-input-placeholder { /* WebKit browsers */
+  font-size: .2rem;
+  color:#333333;
+}
+
+.form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size: .2rem;
+  color:#333333;
+}
+.form input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  font-size: .2rem;
+  color:#333333;
+}
+
+
